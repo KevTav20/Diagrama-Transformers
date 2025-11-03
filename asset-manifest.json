@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Linea-de-tiempo-ML/static/css/main.ea2d57eb.css",
-    "main.js": "/Linea-de-tiempo-ML/static/js/main.9d7ab477.js",
-    "index.html": "/Linea-de-tiempo-ML/index.html",
-    "main.ea2d57eb.css.map": "/Linea-de-tiempo-ML/static/css/main.ea2d57eb.css.map",
-    "main.9d7ab477.js.map": "/Linea-de-tiempo-ML/static/js/main.9d7ab477.js.map"
+    "main.css": "/Diagrama-Transformers/static/css/main.ea2d57eb.css",
+    "main.js": "/Diagrama-Transformers/static/js/main.9d7ab477.js",
+    "index.html": "/Diagrama-Transformers/index.html",
+    "main.ea2d57eb.css.map": "/Diagrama-Transformers/static/css/main.ea2d57eb.css.map",
+    "main.9d7ab477.js.map": "/Diagrama-Transformers/static/js/main.9d7ab477.js.map"
   },
   "entrypoints": [
     "static/css/main.ea2d57eb.css",
