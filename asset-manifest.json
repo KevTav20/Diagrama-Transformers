@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Diagrama-Transformers/static/css/main.ea2d57eb.css",
-    "main.js": "/Diagrama-Transformers/static/js/main.9d7ab477.js",
+    "main.css": "/Diagrama-Transformers/static/css/main.9a3783b2.css",
+    "main.js": "/Diagrama-Transformers/static/js/main.d7760f1f.js",
     "index.html": "/Diagrama-Transformers/index.html",
-    "main.ea2d57eb.css.map": "/Diagrama-Transformers/static/css/main.ea2d57eb.css.map",
-    "main.9d7ab477.js.map": "/Diagrama-Transformers/static/js/main.9d7ab477.js.map"
+    "main.9a3783b2.css.map": "/Diagrama-Transformers/static/css/main.9a3783b2.css.map",
+    "main.d7760f1f.js.map": "/Diagrama-Transformers/static/js/main.d7760f1f.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea2d57eb.css",
-    "static/js/main.9d7ab477.js"
+    "static/css/main.9a3783b2.css",
+    "static/js/main.d7760f1f.js"
   ]
 }
