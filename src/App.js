@@ -32,6 +32,72 @@ const Leaf = ({ type = "round", width = 80, height = 50, color = "#6DC75B", rota
     </svg>
   );
 };
+// Lista de imágenes de los científicos
+const scientistImages = [
+  { name: "Jakob Uszkoreit", url: "https://framerusercontent.com/images/eGxXGn6TuV3KwVcPn3K8AlYbU.jpg" },
+  { name: "Illia Polosukhin", url: "https://avatars.githubusercontent.com/u/175486?v=4" },
+  { name: "Ashish Vaswani", url: "https://media.licdn.com/dms/image/v2/C5603AQEDhAJzTfYLvA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1650996874298?e=2147483647&v=beta&t=hiPmTXkMBcUqL5dR0DB2vN2f7B8s-kZqwDAR3CUS4ms" },
+  { name: "Niki Parmar", url: "https://miro.medium.com/0*iH1nF6xxkDvFWRmt" },
+  { name: "Łukasz Kaiser", url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTTgzjvbGfLljo4uw75VxwQdmCMxb7cP75JA&s" },
+  { name: "Aidan Gomez", url: "https://imageio.forbes.com/specials-images/imageserve/6727cca8288cbea3540c2dca/0x0.jpg?format=jpg&crop=2394,2393,x559,y0,safe&height=416&width=416&fit=bounds" },
+  { name: "Llion Jones", url: "https://venturecafeglobal.org/wp-content/uploads/sites/16/2025/02/AI-Lilon-Jones.png" },
+  { name: "Noam Shazeer", url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwXSTwFg8_EDwc_c0ErK3wQ1872MucyvUEwg&s" },
+];
+
+
+
+// Fotos flotantes de fondo
+const FloatingScientistImages = ({ position = "start" }) => {
+  const justify = position === "start" ? "justify-center mt-10" : "justify-center mt-20 mb-20";
+
+
+  return (
+    <div className={`pointer-events-none z-[9999] w-full flex flex-wrap ${justify} gap-10 p-6`}>
+      {scientistImages.map((img, i) => (
+        <div
+          key={i}
+          className="flex flex-col items-center gap-2 pointer-events-none animate-bounce-slow"
+          style={{ animationDelay: `${i * 0.3}s` }}
+        >
+          <div
+            className="rounded-full overflow-hidden shadow-2xl border-4 border-amber-900 hover:scale-110 transition-transform duration-500"
+            style={{ width: "130px", height: "130px" }}
+          >
+            <img src={img.url} alt={img.name} className="w-full h-full object-cover" />
+          </div>
+          <p className="text-amber-900 font-bold text-sm bg-amber-200 px-3 py-1 rounded-full shadow-md border border-amber-700">
+            {img.name}
+          </p>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+
+// Animaciones
+const styles = `
+@keyframes floating {
+  0% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-12px) scale(1.03); }
+  100% { transform: translateY(0px) scale(1); }
+}
+
+@keyframes bounceSlow {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-18px); }
+  100% { transform: translateY(0); }
+}
+
+.animate-floating {
+  animation: floating 6s ease-in-out infinite;
+}
+
+.animate-bounce-slow {
+  animation: bounceSlow 5s ease-in-out infinite;
+}
+`;
+
 
 const TransformerTree = () => {
   // Hojas de fondo con diferentes tipos
@@ -47,6 +113,8 @@ const TransformerTree = () => {
 
   return (
     <div className="w-full min-h-screen bg-gradient-to-b from-sky-400 via-sky-200 to-amber-50 p-8 overflow-x-auto relative">
+      {/* Fotos de científicos al INICIO del árbol */}
+      <FloatingScientistImages position="start" />
       {/* Hojas de fondo realistas */}
       {backgroundLeaves.map((leaf) => (
         <div

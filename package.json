@@ -1,7 +1,7 @@
 {
-  "name": "ml-timeline",
+  "name": "Transformers-Diagram",
   "version": "0.1.0",
-  "homepage": "https://KevTav20.github.io/Linea-de-tiempo-ML",
+  "homepage": "https://KevTav20.github.io/Diagrama-Transformers",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
