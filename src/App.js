@@ -172,9 +172,9 @@ const TransformerTree = () => {
             style={{ top: '60px', width: '600px' }}></div>
 
           {/* Líneas verticales a cada fruto */}
-          <div className="absolute z-0" style={{ top: '62px', left: 'calc(50% - 200px)', width: '2px', height: '38px', background: '#78350f' }}></div>
-          <div className="absolute z-0" style={{ top: '62px', left: 'calc(50% - 1px)', width: '2px', height: '38px', background: '#78350f' }}></div>
-          <div className="absolute z-0" style={{ top: '62px', left: 'calc(50% + 198px)', width: '2px', height: '38px', background: '#78350f' }}></div>
+          <div className="absolute z-0" style={{ top: '62px', left: 'calc(50% - 240px)', width: '7px', height: '38px', background: '#78350f' }}></div>
+          <div className="absolute z-0" style={{ top: '62px', left: 'calc(50% - 4px)', width: '7px', height: '38px', background: '#78350f' }}></div>
+          <div className="absolute z-0" style={{ top: '62px', left: 'calc(50% + 235px)', width: '7px', height: '38px', background: '#78350f' }}></div>
         </div>
 
         {/* Sección 1: Impacto Global - 3 frutos */}
@@ -263,10 +263,10 @@ const TransformerTree = () => {
             style={{ top: '80px', width: '1000px' }}></div>
 
           {/* Líneas verticales a cada rama */}
-          <div className="absolute z-0" style={{ top: '82px', left: 'calc(50% - 375px)', width: '2px', height: '46px', background: '#78350f' }}></div>
-          <div className="absolute z-0" style={{ top: '82px', left: 'calc(50% - 125px)', width: '2px', height: '46px', background: '#78350f' }}></div>
-          <div className="absolute z-0" style={{ top: '82px', left: 'calc(50% + 125px)', width: '2px', height: '46px', background: '#78350f' }}></div>
-          <div className="absolute z-0" style={{ top: '82px', left: 'calc(50% + 375px)', width: '2px', height: '46px', background: '#78350f' }}></div>
+          <div className="absolute z-0" style={{ top: '82px', left: 'calc(50% - 335px)', width: '7px', height: '46px', background: '#78350f' }}></div>
+          <div className="absolute z-0" style={{ top: '82px', left: 'calc(50% - 110px)', width: '7px', height: '46px', background: '#78350f' }}></div>
+          <div className="absolute z-0" style={{ top: '82px', left: 'calc(50% + 110px)', width: '7px', height: '46px', background: '#78350f' }}></div>
+          <div className="absolute z-0" style={{ top: '82px', left: 'calc(50% + 335px)', width: '7px', height: '46px', background: '#78350f' }}></div>
         </div>
 
         {/* 4 Ramas principales con información */}
@@ -421,9 +421,9 @@ const TransformerTree = () => {
             style={{ top: '80px', width: '800px' }}></div>
 
           {/* Líneas verticales a cada raíz */}
-          <div className="absolute z-0" style={{ top: '82px', left: 'calc(50% - 267px)', width: '2px', height: '46px', background: '#78350f' }}></div>
-          <div className="absolute z-0" style={{ top: '82px', left: 'calc(50% - 1px)', width: '2px', height: '46px', background: '#78350f' }}></div>
-          <div className="absolute z-0" style={{ top: '82px', left: 'calc(50% + 265px)', width: '2px', height: '46px', background: '#78350f' }}></div>
+          <div className="absolute z-0" style={{ top: '82px', left: 'calc(50% - 300px)', width: '7px', height: '46px', background: '#78350f' }}></div>
+          <div className="absolute z-0" style={{ top: '82px', left: 'calc(50% - 4px)', width: '7px', height: '46px', background: '#78350f' }}></div>
+          <div className="absolute z-0" style={{ top: '82px', left: 'calc(50% + 300px)', width: '7px', height: '46px', background: '#78350f' }}></div>
         </div>
 
         {/* Información de raíces - 3 bloques */}
